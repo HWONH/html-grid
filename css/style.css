@@ -53,3 +53,15 @@ grid-gap: 행의 간격 열의 간격;      열과 행의 간격을 다르게 �
 #ex_03 .wrapper:hover .item:nth-child(3){grid-row: 3/4;grid-column: 1/3;}
 #ex_03 .wrapper:hover .item:nth-child(4){grid-row: 1/3;grid-column: 1/2;}
 #ex_03 .wrapper .item p{display: table-cell;vertical-align: middle;font-size: 36px;}
+
+#ex_04{}
+#ex_04 .title{}
+#ex_04 .wrapper{width: 820px;height: 820px;border: 10px solid #000;display: grid;grid-template-columns: 160px 600px 40px;grid-template-rows: 250px 300px 125px 125px;}
+#ex_04 .wrapper div{background-color: #fff;border: 10px solid #000;}
+#ex_04 .wrapper .item01{}
+#ex_04 .wrapper .item02{background-color: red;grid-row: 1/3;grid-column: 2/4;}
+#ex_04 .wrapper .item03{grid-row: 2/3;grid-column: 1/2;}
+#ex_04 .wrapper .item04{background-color: blue;grid-row: 3/5;grid-column: 1/2;}
+#ex_04 .wrapper .item05{grid-row: 3/5;grid-column: 2/3;}
+#ex_04 .wrapper .item06{grid-row: 3/4;grid-column: 3/4;}
+#ex_04 .wrapper .item07{background-color: yellow;grid-row: 4/5;grid-column: 3/4;}
