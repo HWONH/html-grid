@@ -1,0 +1,29 @@
+@charset "utf-8";
+
+#ex_01{}
+#ex_01 .title{}
+#ex_01 .wrapper{width: 600px;height: 600px;background-color: #cccccc;display: grid;grid-template-columns: 1fr 2fr 1fr;grid-template-rows: minmax(50px auto);grid-gap: 10px 50px;}
+
+/* 
+grid-template-columns: 200px 200px 200px;   열의 수+열의 너비값;가로방향으로 몇단을 얼마의 사이즈로 가져갈 것인가를 지정
+grid-template-rows: 300px 300px;            행의 수+행의 높이값;세로방향으로 몇줄을 얼마의 사이즈로 가져갈 것인가를 지정(행이 존재하지 않는다 하더라도 가상의 그리드 공간을 만든다)
+
+grid-template-rows: minmax(최소값 auto);    각 내부 자식의 컨텐츠가 부모 영역보다 클 경우 minmax() 사용, 내부 내용의 최소값과 최대값을 적용하는데 있어 최소값은 지정값, 최대값은 auto로 설정했기 때문에 내부 컨텐츠의 높이만큼 자동 조절 가능
+
+grid-template-columns: 1fr 2fr 1fr;         부분 또는 분수;부모 영역을 기준으로 각각 개별적인 공간을 상대적으로 나눌때 사용(%개념과 유사)
+
+grid-template-columns: repeat(3, 1fr);      repeat(열의 개수, 상대적 비율);반복 그리드의 수와 얼마만큼의 비율 가져갈 것인가를 지정(대부분 균등분할)
+
+grid-column-gap: 10px;              열의 간격
+grid-row-gap: 20px;                 행의 간격
+
+grid-gap: 30px;                     열과 행의 간격을 동일하게 부여
+grid-gap: 행의 간격 열의 간격;      열과 행의 간격을 다르게 부여
+*/
+
+#ex_01 .wrapper .item{padding: 20px;}
+#ex_01 .wrapper .item:nth-child(1){background-color: #ffffaa;}
+#ex_01 .wrapper .item:nth-child(2){background-color: #ffaaff;}
+#ex_01 .wrapper .item:nth-child(3){background-color: #aaaaff;}
+#ex_01 .wrapper .item:nth-child(4){background-color: #aaffaa;}
+#ex_01 .wrapper .item:nth-child(5){background-color: #ffaaaa;}
